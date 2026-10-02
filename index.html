@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Atal Sharma, AI engineer</title>
+  <meta name="description" content="Atal Sharma is a Senior Data Scientist who builds LLM and multi-agent systems for production. From privacy-first AI agents back to 50,000 recorded infant cries." />
+  <meta name="theme-color" content="#E2E1E1" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Atal Sharma | AI engineer" />
+  <meta property="og:description" content="I build AI agents that survive production. Senior Data Scientist, six years in production ML." />
+  <meta property="og:url" content="%VITE_SITE_URL%" />
+  <meta property="og:image" content="%VITE_SITE_URL%og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" as="image" href="./img/atal-portrait-1200.webp" imagesrcset="./img/atal-portrait-720.webp 720w, ./img/atal-portrait-1200.webp 1200w" imagesizes="(max-width: 767px) 100vw, 46vw" fetchpriority="high" />
+  <link rel="stylesheet" href="./src/styles/main.css" />
+  <script>(function (c) {
+    c.remove('no-js'); c.add('js', 'intro-wait');
+    try { if (matchMedia('(prefers-reduced-motion: reduce)').matches) c.add('reduced'); } catch (e) {}
+    // the story always starts from the intro on reload; links to #sections still jump
+    try { if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; } catch (e) {}
+  })(document.documentElement.classList);</script>
+  <script type="module" src="./src/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <canvas id="stage" aria-hidden="true"></canvas>
+
+  <div class="labels" aria-hidden="true">
+    <span class="label" data-label="g0">Sensitive data</span>
+    <span class="label" data-label="g1">Masking</span>
+    <span class="label" data-label="g2">Model choice</span>
+    <span class="label label--strong" data-label="local">Self-hosted</span>
+    <span class="label label--strong" data-label="api">API</span>
+    <span class="label" data-label="users">Users</span>
+    <span class="label" data-label="items">Items</span>
+    <span class="label label--strong" data-label="predicted">Predicted</span>
+    <span class="label" data-label="history">History</span>
+    <span class="label" data-label="forecast">Forecast</span>
+    <span class="label label--signal" data-label="anomaly">Anomaly</span>
+    <span class="label" data-label="time">Time</span>
+    <span class="label" data-label="freq">Frequency</span>
+    <span class="label" data-label="c0">Hunger</span>
+    <span class="label" data-label="c1">Pain</span>
+    <span class="label" data-label="c2">Sleepiness</span>
+    <span class="label" data-label="c3">Discomfort</span>
+    <span class="label" data-label="c4">Medical distress</span>
+    <span class="label label--signal" data-label="wrong">Orange: wrong cluster</span>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" aria-label="Atal Sharma, back to top">Atal Sharma</a>
+    <nav class="nav__right" aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="#recent">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#career">Career</a></li>
+      </ul>
+      <a class="btn btn--line nav__cta" href="#contact">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-label="Introduction">
+      <h1 class="hero__name"><span class="hero__name-line" data-fit>Atal Sharma</span></h1>
+      <picture class="hero__portrait">
+        <img src="./img/atal-portrait-1200.webp"
+             srcset="./img/atal-portrait-720.webp 720w, ./img/atal-portrait-1200.webp 1200w"
+             sizes="(max-width: 767px) 100vw, 46vw"
+             width="1200" height="1152" alt="Atal Sharma" fetchpriority="high" decoding="async" />
+      </picture>
+      <div class="hero__copy">
+        <p class="hero__headline">I build AI agents that <span class="accent">survive production.</span></p>
+        <p class="hero__sub">Senior Data Scientist, six years in production ML. These days: multi-agent systems that hold up after the demo.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#contact">Get in touch</a>
+          <a class="btn btn--line" href="#agents">Read the story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter: Ingenia AI, multi-agent systems -->
+    <section class="chapter" id="agents" style="--len: 3" aria-labelledby="agents-title">
+      <div class="chapter__sticky">
+        <div class="chapter__text">
+          <div class="beat" data-beat="0">
+            <p class="eyebrow">2023 to now</p>
+            <p class="lead lead--first">Most days, my job is</p>
+            <h2 class="display display--md" id="agents-title" data-split>Getting AI agents to talk to each other,</h2>
+            <p class="kicker" data-split>without starting a fight.</p>
+          </div>
+          <div class="beat" data-beat="1">
+            <p class="statement" data-split>A fight is my word for agents disrupting each other.</p>
+            <p class="lead">At Ingenia AI I build multi-agent systems where each agent does one job well, and we reuse what we build so nothing gets built twice.</p>
+          </div>
+          <div class="beat" data-beat="2">
+            <p class="statement" data-split>An orchestrator, not a group chat.</p>
+            <p class="lead">A planner decides which agent acts next and which tools it may use. The hard rules live in code, not in the prompt, so no agent can talk its way past them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter: gates -->
+    <section class="chapter" id="gates" style="--len: 2.5" aria-labelledby="gates-title">
+      <div class="chapter__sticky">
+        <div class="chapter__text">
+          <div class="beat" data-beat="0">
+            <h2 class="display display--md" id="gates-title" data-split>Every query passes three gates.</h2>
+            <ol class="gates">
+              <li data-gate="0">Does it carry sensitive data?</li>
+              <li data-gate="1">Can that data be masked?</li>
+              <li data-gate="2">How hard is the question?</li>
+            </ol>
+            <p class="lead outcome">Self-hosted when the data can't leave the building. An API when it can. Decided on privacy and security, not on hype.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent work: six agents built at Ingenia, each with a short animation (authored in its end state) -->
+    <section class="recent" id="recent" aria-labelledby="recent-title">
+      <div class="wrap">
+        <h2 class="h2 reveal" id="recent-title">Recent work</h2>
+        <p class="lead reveal">Six agents I built at Ingenia AI.</p>
+        <ul class="recent__grid">
+
+          <li class="work" data-work="buyer">
+            <div class="work__art">
+              <svg class="art" viewBox="0 0 400 240" aria-hidden="true" focusable="false">
+                <line class="a-track" x1="70" y1="80" x2="330" y2="80" />
+                <line class="a-progress" x1="70" y1="80" x2="330" y2="80" />
+                <circle class="a-ring" cx="70" cy="80" r="14" />
+                <circle class="a-ring" cx="200" cy="80" r="14" />
+                <circle class="a-ring" cx="330" cy="80" r="14" />
+                <circle class="a-cob b-fill" cx="70" cy="80" r="8" />
+                <circle class="a-cob b-fill" cx="200" cy="80" r="8" />
+                <circle class="a-cob b-fill" cx="330" cy="80" r="8" />
+                <text class="b-label" x="70" y="117" text-anchor="middle">PROVIDERS</text>
+                <text class="b-label" x="200" y="117" text-anchor="middle">NDA</text>
+                <text class="b-label" x="330" y="117" text-anchor="middle">RFI</text>
+                <circle class="a-ink b-dot" cx="330" cy="80" r="5" opacity="0" />
+                <g class="b-doc">
+                  <rect class="a-sheet" x="146" y="138" width="108" height="80" />
+                  <rect class="a-cob b-line" x="160" y="152" width="48" height="6" />
+                  <rect class="a-ln b-line" x="160" y="168" width="78" height="4" />
+                  <rect class="a-ln b-line" x="160" y="180" width="66" height="4" />
+                  <rect class="a-ln b-line" x="160" y="192" width="74" height="4" />
+                  <rect class="a-ln b-line" x="160" y="204" width="42" height="4" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="work__title">Buyer assistant</h3>
+            <p class="work__desc">From finding providers to sending the RFI.</p>
+          </li>
+
+          <li class="work" data-work="extract">
+            <div class="work__art">
+              <svg class="art" viewBox="0 0 400 240" aria-hidden="true" focusable="false">
+                <rect class="a-sheet" x="24" y="26" width="150" height="188" />
+                <rect class="a-ink" x="38" y="42" width="66" height="7" />
+                <rect class="a-ln" x="38" y="66" width="118" height="5" />
+                <rect class="a-cob e-hit" x="38" y="84" width="96" height="5" />
+                <rect class="a-ln" x="38" y="102" width="110" height="5" />
+                <rect class="a-cob e-hit" x="38" y="120" width="84" height="5" />
+                <rect class="a-ln" x="38" y="138" width="120" height="5" />
+                <rect class="a-cob e-hit" x="38" y="156" width="100" height="5" />
+                <rect class="a-ln" x="38" y="174" width="90" height="5" />
+                <rect class="a-ln" x="38" y="192" width="112" height="5" />
+                <rect class="a-cob e-scan" x="24" y="212" width="150" height="2" opacity="0" />
+                <rect class="a-ink" x="212" y="52" width="164" height="22" />
+                <rect class="a-paper" x="222" y="61" width="34" height="4" />
+                <rect class="a-paper" x="278" y="61" width="30" height="4" />
+                <rect class="a-paper" x="330" y="61" width="26" height="4" />
+                <rect class="a-frame" x="212" y="52" width="164" height="154" />
+                <line class="a-rule" x1="212" y1="118" x2="376" y2="118" />
+                <line class="a-rule" x1="212" y1="162" x2="376" y2="162" />
+                <rect class="a-cob e-cell" x="222" y="93" width="40" height="6" />
+                <rect class="a-cob e-cell" x="278" y="93" width="34" height="6" />
+                <rect class="a-cob e-cell" x="330" y="93" width="28" height="6" />
+                <rect class="a-cob e-cell" x="222" y="137" width="34" height="6" />
+                <rect class="a-cob e-cell" x="278" y="137" width="40" height="6" />
+                <rect class="a-cob e-cell" x="330" y="137" width="24" height="6" />
+                <rect class="a-cob e-cell" x="222" y="181" width="44" height="6" />
+                <rect class="a-cob e-cell" x="278" y="181" width="28" height="6" />
+                <rect class="a-cob e-cell" x="330" y="181" width="30" height="6" />
+              </svg>
+            </div>
+            <h3 class="work__title">Extraction engine</h3>
+            <p class="work__desc">Plain English in, structured data out.</p>
+          </li>
+
+          <li class="work" data-work="dpo">
+            <div class="work__art">
+              <svg class="art" viewBox="0 0 400 240" aria-hidden="true" focusable="false">
+                <rect class="a-sheet" x="36" y="22" width="176" height="196" />
+                <rect class="a-ink" x="52" y="38" width="80" height="7" />
+                <rect class="a-ln" x="52" y="62" width="140" height="5" />
+                <rect class="a-ln" x="52" y="82" width="124" height="5" />
+                <rect class="a-sig d-flag" x="52" y="102" width="132" height="5" />
+                <rect class="a-ln" x="52" y="122" width="110" height="5" />
+                <rect class="a-ln" x="52" y="142" width="138" height="5" />
+                <rect class="a-sig d-flag" x="52" y="162" width="120" height="5" />
+                <rect class="a-ln" x="52" y="182" width="128" height="5" />
+                <rect class="a-ln" x="52" y="202" width="96" height="5" />
+                <circle class="a-sig d-mark" cx="44" cy="104.5" r="3" />
+                <circle class="a-sig d-mark" cx="44" cy="164.5" r="3" />
+                <rect class="a-cob d-scan" x="36" y="216" width="176" height="2" opacity="0" />
+                <rect class="a-cob d-fix" x="226" y="101" width="40" height="7" />
+                <rect class="a-cob d-fix" x="226" y="161" width="40" height="7" />
+                <circle class="a-ringtrack" cx="324" cy="104" r="38" />
+                <circle class="d-arc" cx="324" cy="104" r="38" transform="rotate(-90 324 104)" />
+                <text class="d-label" x="324" y="166" text-anchor="middle">SCORE</text>
+              </svg>
+            </div>
+            <h3 class="work__title">Virtual data protection officer</h3>
+            <p class="work__desc">Helps companies comply with India's data protection law.</p>
+          </li>
+
+          <li class="work" data-work="finance">
+            <div class="work__art">
+              <svg class="art" viewBox="0 0 400 240" aria-hidden="true" focusable="false">
+                <rect class="a-sheet f-sheet" x="30" y="60" width="104" height="136" />
+                <rect class="a-sheet f-sheet" x="38" y="52" width="104" height="136" />
+                <g class="f-sheet">
+                  <rect class="a-sheet" x="46" y="44" width="104" height="136" />
+                  <rect class="a-ink" x="58" y="58" width="50" height="6" />
+                  <rect class="a-ln" x="58" y="78" width="44" height="4" /><rect class="a-ln" x="116" y="78" width="22" height="4" />
+                  <rect class="a-ln" x="58" y="94" width="38" height="4" /><rect class="a-ln" x="116" y="94" width="22" height="4" />
+                  <rect class="a-ln" x="58" y="110" width="48" height="4" /><rect class="a-ln" x="116" y="110" width="22" height="4" />
+                  <rect class="a-ln" x="58" y="126" width="34" height="4" /><rect class="a-ln" x="116" y="126" width="22" height="4" />
+                  <rect class="a-ln" x="58" y="142" width="44" height="4" /><rect class="a-ln" x="116" y="142" width="22" height="4" />
+                  <rect class="a-ln" x="58" y="158" width="40" height="4" /><rect class="a-ln" x="116" y="158" width="22" height="4" />
+                </g>
+                <line class="a-track" x1="168" y1="192" x2="266" y2="192" />
+                <rect class="a-cob f-bar" x="176" y="146" width="14" height="46" />
+                <rect class="a-cob f-bar" x="198" y="120" width="14" height="72" />
+                <rect class="a-cob f-bar" x="220" y="134" width="14" height="58" />
+                <rect class="a-cob f-bar" x="242" y="98" width="14" height="94" />
+                <text class="f-label" x="217" y="214" text-anchor="middle">RATIOS</text>
+                <g class="f-report">
+                  <rect class="a-sheet" x="294" y="40" width="84" height="110" />
+                  <rect class="a-cob f-line" x="306" y="54" width="42" height="6" />
+                  <rect class="a-ln f-line" x="306" y="72" width="58" height="4" />
+                  <rect class="a-ln f-line" x="306" y="84" width="50" height="4" />
+                  <rect class="a-ln f-line" x="306" y="96" width="56" height="4" />
+                  <rect class="a-ln f-line" x="306" y="108" width="44" height="4" />
+                  <rect class="a-ln f-line" x="306" y="120" width="52" height="4" />
+                </g>
+                <g class="f-dl">
+                  <circle class="a-cob" cx="336" cy="184" r="17" />
+                  <path class="f-arrow" d="M336 175 v16 M329 185 l7 7 7 -7" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="work__title">Financial-document assistant</h3>
+            <p class="work__desc">Reads statements, works out ratios, writes the report.</p>
+          </li>
+
+          <li class="work" data-work="voice">
+            <div class="work__art">
+              <svg class="art" viewBox="0 0 400 240" aria-hidden="true" focusable="false">
+                <text class="v-label" x="22" y="74">VOICE IN</text>
+                <text class="v-label" x="22" y="128">SAFETY CHECK</text>
+                <text class="v-label" x="22" y="182">REPLY</text>
+                <g class="v-in"><rect class="a-ink" x="130" y="65" width="6" height="10" /><rect class="a-ink" x="142" y="61" width="6" height="18" /><rect class="a-ink" x="154" y="57" width="6" height="26" /><rect class="a-ink" x="166" y="63" width="6" height="14" /><rect class="a-ink" x="178" y="55" width="6" height="30" /><rect class="a-ink" x="190" y="59" width="6" height="22" /><rect class="a-ink" x="202" y="64" width="6" height="12" /><rect class="a-ink" x="214" y="66" width="6" height="8" /><rect class="a-ink" x="226" y="60" width="6" height="20" /><rect class="a-ink" x="238" y="56" width="6" height="28" /><rect class="a-ink" x="250" y="62" width="6" height="16" /><rect class="a-ink" x="262" y="65" width="6" height="10" /><rect class="a-ink" x="274" y="58" width="6" height="24" /><rect class="a-ink" x="286" y="61" width="6" height="18" /><rect class="a-ink" x="298" y="66" width="6" height="8" /><rect class="a-ink" x="310" y="63" width="6" height="14" /><rect class="a-ink" x="322" y="60" width="6" height="20" /><rect class="a-ink" x="334" y="65" width="6" height="10" /></g>
+                <circle class="v-ring" cx="235" cy="124" r="20" />
+                <path class="v-tick" d="M225 124 l7 7 13 -14" />
+                <g class="v-out"><rect class="a-cob" x="130" y="174" width="6" height="8" /><rect class="a-cob" x="142" y="172" width="6" height="12" /><rect class="a-cob" x="154" y="169" width="6" height="18" /><rect class="a-cob" x="166" y="166" width="6" height="24" /><rect class="a-cob" x="178" y="163" width="6" height="30" /><rect class="a-cob" x="190" y="165" width="6" height="26" /><rect class="a-cob" x="202" y="168" width="6" height="20" /><rect class="a-cob" x="214" y="171" width="6" height="14" /><rect class="a-cob" x="226" y="173" width="6" height="10" /><rect class="a-cob" x="238" y="171" width="6" height="14" /><rect class="a-cob" x="250" y="167" width="6" height="22" /><rect class="a-cob" x="262" y="164" width="6" height="28" /><rect class="a-cob" x="274" y="166" width="6" height="24" /><rect class="a-cob" x="286" y="169" width="6" height="18" /><rect class="a-cob" x="298" y="172" width="6" height="12" /><rect class="a-cob" x="310" y="173" width="6" height="10" /><rect class="a-cob" x="322" y="174" width="6" height="8" /><rect class="a-cob" x="334" y="175" width="6" height="6" /></g>
+              </svg>
+            </div>
+            <h3 class="work__title">Voice assistant for teen mental health</h3>
+            <p class="work__desc">Every reply is safety-checked before it is spoken.</p>
+          </li>
+
+          <li class="work" data-work="evaluator">
+            <div class="work__art">
+              <svg class="art" viewBox="0 0 400 240" aria-hidden="true" focusable="false">
+                <rect class="a-sheet" x="26" y="86" width="86" height="68" />
+                <text class="t-api" x="69" y="125" text-anchor="middle">API</text>
+                <line class="a-dash" x1="112" y1="120" x2="154" y2="120" />
+                <circle class="a-ink t-probe" cx="154" cy="120" r="4" opacity="0" />
+                <circle class="a-cob t-dot" cx="174" cy="44" r="6" /><rect class="a-ln t-bar" x="190" y="41" width="120" height="6" />
+                <circle class="a-cob t-dot" cx="174" cy="70" r="6" /><rect class="a-ln t-bar" x="190" y="67" width="148" height="6" />
+                <circle class="a-cob t-dot" cx="174" cy="96" r="6" /><rect class="a-ln t-bar" x="190" y="93" width="104" height="6" />
+                <circle class="a-sig t-dot t-fail" cx="174" cy="122" r="6" /><rect class="a-ln t-bar" x="190" y="119" width="136" height="6" />
+                <circle class="a-cob t-dot" cx="174" cy="148" r="6" /><rect class="a-ln t-bar" x="190" y="145" width="128" height="6" />
+                <circle class="a-cob t-dot" cx="174" cy="174" r="6" /><rect class="a-ln t-bar" x="190" y="171" width="96" height="6" />
+                <rect class="a-ln" x="168" y="204" width="196" height="8" />
+                <rect class="a-cob t-pass" x="168" y="204" width="163" height="8" />
+                <rect class="a-sig t-failbar" x="331" y="204" width="33" height="8" />
+                <text class="t-label" x="168" y="230">REPORT</text>
+              </svg>
+            </div>
+            <h3 class="work__title">Agent evaluator</h3>
+            <p class="work__desc">Tests other AI agents and reports what broke.</p>
+            <p class="work__note">In progress</p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills: five stages on one pipeline, in the order a system gets built.
+         Authored as the finished picture. On wider screens the skills start out
+         scattered like an untrained embedding and scrolling pulls each group into
+         place while the line draws from stage to stage. -->
+    <section class="skills" id="skills" style="--len: 3.2" data-land="0.94" aria-labelledby="skills-title">
+      <div class="skills__sticky">
+        <div class="skills__head">
+          <h2 class="h2 reveal" id="skills-title">Skills</h2>
+          <p class="lead reveal">In the order a system gets built.</p>
+        </div>
+        <div class="skills__plot">
+          <div class="skills__track" aria-hidden="true"><span class="skills__line"></span></div>
+          <div class="skills__noise" aria-hidden="true"></div>
+          <ol class="skills__stages">
+            <li class="stage stage--up" style="--i: 0">
+              <span class="stage__node" aria-hidden="true"></span>
+              <h3 class="stage__name">Data</h3>
+              <ul class="stage__skills">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Polars and DuckDB</li>
+                <li>Web extraction</li>
+                <li>Document parsing</li>
+                <li>Data labelling</li>
+              </ul>
+            </li>
+            <li class="stage stage--down" style="--i: 1">
+              <span class="stage__node" aria-hidden="true"></span>
+              <h3 class="stage__name">Models</h3>
+              <ul class="stage__skills">
+                <li>Recommender systems</li>
+                <li>Matrix factorisation</li>
+                <li>Prediction models</li>
+                <li>LSTM networks</li>
+                <li>Audio signal processing</li>
+                <li>Embeddings</li>
+              </ul>
+            </li>
+            <li class="stage stage--up" style="--i: 2">
+              <span class="stage__node" aria-hidden="true"></span>
+              <h3 class="stage__name">Agents</h3>
+              <ul class="stage__skills">
+                <li>Multi-agent orchestration</li>
+                <li>Tool calling</li>
+                <li>RAG</li>
+                <li>Text-to-SQL</li>
+                <li>Voice agents</li>
+                <li>Guardrails</li>
+              </ul>
+            </li>
+            <li class="stage stage--down" style="--i: 3">
+              <span class="stage__node" aria-hidden="true"></span>
+              <h3 class="stage__name">Evaluation</h3>
+              <ul class="stage__skills">
+                <li>LLM-as-judge</li>
+                <li>Judge calibration</li>
+                <li>Generated test suites</li>
+                <li>Adversarial testing</li>
+                <li>Significance testing</li>
+              </ul>
+            </li>
+            <li class="stage stage--up" style="--i: 4">
+              <span class="stage__node" aria-hidden="true"></span>
+              <h3 class="stage__name">Production</h3>
+              <ul class="stage__skills">
+                <li>Self-hosted LLMs</li>
+                <li>Privacy-first routing</li>
+                <li>PII masking</li>
+                <li>APIs and job queues</li>
+                <li>Docker</li>
+                <li>AWS</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter: WARPSPD.ai -->
+    <section class="chapter" id="features" style="--len: 2.5" aria-labelledby="features-title">
+      <div class="chapter__sticky">
+        <div class="chapter__text">
+          <div class="beat" data-beat="0">
+            <p class="eyebrow">2020 to 2023</p>
+            <h2 class="display display--md" id="features-title" data-split>Before agents, production ML.</h2>
+            <p class="lead">At WARPSPD.ai I built recommendation engines, prediction systems and AI-driven insights across multiple businesses. I joined as a Machine Learning Engineer in 2020 and was promoted to Data Scientist in 2022.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter: where it started -->
+    <section class="chapter" id="signal" style="--len: 4" aria-labelledby="signal-title">
+      <div class="chapter__sticky">
+        <div class="chapter__text">
+          <div class="beat" data-beat="0">
+            <p class="eyebrow">2018 to 2020</p>
+            <h2 class="display" id="signal-title" data-split>It started with 50,000 cries.</h2>
+            <p class="lead">For my M.Tech, I recorded infant cries myself at a children's NICU in Udhampur, with consent, five seconds at a time.</p>
+          </div>
+          <div class="beat" data-beat="1">
+            <dl class="figures">
+              <div class="figure figure--big">
+                <dt class="sr-only">Recordings</dt>
+                <dd><span class="figure__num" data-counter="50000" aria-hidden="true">50,000</span><span class="sr-only">50,000</span></dd>
+                <dd class="figure__label">recordings, each one labelled</dd>
+              </div>
+              <div class="figure">
+                <dt class="sr-only">Time in the NICU</dt>
+                <dd><span class="figure__num">3</span></dd>
+                <dd class="figure__label">months in the NICU</dd>
+              </div>
+              <div class="figure">
+                <dt class="sr-only">Length of each recording</dt>
+                <dd><span class="figure__num">5</span></dd>
+                <dd class="figure__label">seconds per cry</dd>
+              </div>
+            </dl>
+            <p class="lead">Collecting and labelling took most of the time. That part never shows up in a model card.</p>
+          </div>
+          <div class="beat" data-beat="2">
+            <p class="statement" data-split>Five kinds of cry: <span class="k k0">hunger,</span> <span class="k k1">pain,</span> <span class="k k2">sleepiness,</span> <span class="k k3">discomfort</span> and <span class="k k4">medical distress.</span></p>
+          </div>
+          <div class="beat" data-beat="3">
+            <p class="statement" data-split>Then the model: an LSTM on MFCC, pitch and energy features. Around 90% test accuracy. <span class="accent">It was the easy part.</span></p>
+            <p class="links"><a class="link" href="https://ieeexplore.ieee.org/document/9214193" target="_blank" rel="noopener">Read the IEEE paper <span aria-hidden="true">↗</span></a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Principles -->
+    <section class="principles" id="principles" style="--len: 3" aria-label="Two rules I work by">
+      <div class="principles__sticky">
+        <svg class="flood" aria-hidden="true" focusable="false"><path class="flood__path" d="" /></svg>
+        <svg class="curves" aria-hidden="true" focusable="false">
+          <path class="curve curve--prod" d="" />
+          <path class="curve curve--demo" d="" />
+        </svg>
+        <span class="curve-label curve-label--demo" aria-hidden="true">Demo</span>
+        <span class="curve-label curve-label--prod" aria-hidden="true">Production</span>
+        <div class="principles__inner">
+          <p class="pbeat pbeat--demo"><span class="strike-wrap"><span data-split>It works in the demo.</span><span class="strike" aria-hidden="true"></span></span></p>
+          <div class="rules">
+            <p class="rule" data-split>If it only works in the demo, it doesn't work.</p>
+            <p class="rule" data-split>Data is messy, and the model is the easy part.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section class="stack" id="stack" aria-labelledby="stack-title">
+      <div class="wrap">
+        <h2 class="h2 reveal" id="stack-title">Where the models actually run.</h2>
+        <div class="stack__grid">
+          <div class="stack__group reveal">
+            <h3 class="stack__label">Serving</h3>
+            <ul><li>vLLM</li><li>NVIDIA Triton</li><li>Ollama</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__label">Managed</h3>
+            <ul><li>AWS Bedrock</li><li>Google Vertex AI</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__label">Agents</h3>
+            <ul><li>LangGraph</li><li>LangChain</li><li>LangFlow</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__label">Retrieval</h3>
+            <ul><li>Qdrant</li><li>RAG pipelines</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__label">Models</h3>
+            <ul><li>Fine-tuning</li><li>Quantization</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__label">Plumbing</h3>
+            <ul><li>FastAPI</li><li>PostgreSQL</li><li>Redis</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career -->
+    <section class="career" id="career" aria-labelledby="career-title">
+      <div class="wrap">
+        <h2 class="h2 reveal" id="career-title">Career</h2>
+        <div class="career__cols">
+          <div class="career__group reveal">
+            <h3 class="career__label">Work</h3>
+            <ol class="career__list">
+              <li><span class="when">May 2026 - now</span><span class="org">Ingenia AI</span><span class="role">Senior Data Scientist</span><span class="note">Remote</span></li>
+              <li><span class="when">2023 - May 2026</span><span class="org">Ingenia AI</span><span class="role">Data Scientist</span><span class="note">Remote</span></li>
+              <li><span class="when">2022 - 2023</span><span class="org">WARPSPD.ai</span><span class="role">Data Scientist</span><span class="note">Remote</span></li>
+              <li><span class="when">2020 - 2022</span><span class="org">WARPSPD.ai</span><span class="role">Machine Learning Engineer</span><span class="note">Remote</span></li>
+            </ol>
+          </div>
+          <div class="career__group reveal">
+            <h3 class="career__label">Study and research</h3>
+            <ol class="career__list">
+              <li><span class="when">2018 - 2020</span><span class="org">Central University of Jammu</span><span class="role">M.Tech, Computer Science and IT, AI/ML specialisation</span><span class="note">IEEE published</span></li>
+              <li><span class="when">2017 - 2018</span><span class="org">MIET, Centre for Research, Innovation and Entrepreneurship</span><span class="role">Worked on a patented project</span></li>
+              <li><span class="when">2014 - 2018</span><span class="org">MIET</span><span class="role">B.E., Computer Science</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 class="contact__title" id="contact-title" data-scatter>Let's talk.</h2>
+        <div class="contact__body">
+          <p class="lead">If you're building agents that have to hold up in production, I'd like to hear about it.</p>
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="mailto:atal.posh@gmail.com">Get in touch</a>
+            <button class="btn btn--line copy" type="button" data-copy="atal.posh@gmail.com"><span class="copy__text">Copy email</span></button>
+          </div>
+          <ul class="contact__links">
+            <li><a class="link" href="mailto:atal.posh@gmail.com">atal.posh@gmail.com</a></li>
+            <li><a class="link" href="https://www.linkedin.com/in/atalsharma-54649693" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+            <li><a class="link" href="https://github.com/ashsharma96" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+            <li><a class="link" href="https://ieeexplore.ieee.org/document/9214193" target="_blank" rel="noopener">IEEE paper <span aria-hidden="true">↗</span></a></li>
+          </ul>
+          <p class="contact__place">Working from Udhampur, Jammu &amp; Kashmir. Proof you don't need Bangalore traffic to ship serious AI.</p>
+        </div>
+      </div>
+      <footer class="footer wrap">
+        <span>&copy; 2026 Atal Sharma</span>
+        <a class="link" href="#top">Back to top</a>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
